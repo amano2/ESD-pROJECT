@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESD Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/WhatsApp_Image_2024-07-06_at_23.46.33_eca45580-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Breath in Pure Air</h1>
+            <p>
+                Making website is now of the easiest thing in the world. You just need to learn HTML, CSS,<br> JavaScript and you are good to go.
+            </p>
+            <a href="" class="hero-btn">Sign Up</a>
+        </div>
+    </section>
+    <!-- Course -->
+    <section class="course">
+        <h1>What we offer</h1>
+        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Eco-friendly</h3>
+                <p>The biodegradable filters used by us areeasily replaceable this would allow for refills without having to dispose of the entire unit,reducing waste.</p>
+            </div>
+            <div class="course-col">
+                <h3>Cost-Friendly</h3>
+                <p>A cost-effective air purifier would be affordable for a wider range of consumers.</p>
+            </div>
+            <div class="course-col">
+                <h3>Convinence</h3>
+                <p>Our air purifier is small and portable which would be ideal for people who live in apartments, small homes, or dorm rooms. It would also be easy to move from room to room to target areas where pollutants are most concentrated.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Campus -->
+    <section class="campus">
+        <h1>Our Product</h1>
+        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="eduford_img/WhatsApp top.jpg" alt="">
+                <div class="layer">
+                    <h3>12 VOLT FAN</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/WhatsApp front.jpg" alt="">
+                <div class="layer">
+                    <h3>3D PRINTED</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/WhatsApp side23.jpg" alt="">
+                <div class="layer">
+                    <h3>BIODEGRADABLE FILTER</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="facilities">
+        <h1>Place Order</h1>
+       
+        <div class="row">
+            <div class="facilities-col">
+                <img src="eduford_img/WhatsApp front22.jpg" alt="">
+                <h3>&#8377 1499/-</h3>
+                
+            </div>
+           
+        </div>
+    </div>
+    
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1>What Our Customers say</h1>
+        <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="eduford_img/user1.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae autem fugiat amet quidem eligendi corrupti velit, dolores optio non sed inventore commodi magni beatae quam deserunt.</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="eduford_img/user2.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae autem fugiat amet quidem eligendi corrupti velit, dolores optio non sed inventore commodi magni beatae quam deserunt.</p>
+                    <h3>David Byer</h3>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h1>Join us to enjoy Our service<br> Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolor natus aspernatur officia impedit in animi,<br> eius delectus porro mollitia ea assumenda blanditiis accusantium?</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-facebook-f"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-linkedin-in"></i>
+        </div>
+       
+    </section>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
